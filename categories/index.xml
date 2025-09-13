@@ -7,45 +7,29 @@
         <generator>Hugo -- gohugo.io</generator>
         <language>zh-cn</language>
         <copyright>agavesunset</copyright>
-        <lastBuildDate>Wed, 09 Sep 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://agavesunset.github.io/categories/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Sun, 06 Jul 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://agavesunset.github.io/categories/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>Api</title>
+        <link>https://agavesunset.github.io/categories/api/</link>
+        <pubDate>Sun, 06 Jul 2025 00:00:00 +0000</pubDate>
+        
+        <guid>https://agavesunset.github.io/categories/api/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>Comfyui</title>
+        <link>https://agavesunset.github.io/categories/comfyui/</link>
+        <pubDate>Sun, 06 Jul 2025 00:00:00 +0000</pubDate>
+        
+        <guid>https://agavesunset.github.io/categories/comfyui/</guid>
+        <description></description>
+        </item>
+        <item>
         <title>Test</title>
         <link>https://agavesunset.github.io/categories/test/</link>
-        <pubDate>Wed, 09 Sep 2020 00:00:00 +0000</pubDate>
+        <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
         
         <guid>https://agavesunset.github.io/categories/test/</guid>
         <description>&lt;img src="https://agavesunset.github.io/categories/test/hutomo-abrianto-l2jk-uxb1BY-unsplash.jpg" alt="Featured image of post Test" /&gt;</description>
-        </item>
-        <item>
-        <title>测试</title>
-        <link>https://agavesunset.github.io/categories/%E6%B5%8B%E8%AF%95/</link>
-        <pubDate>Wed, 09 Sep 2020 00:00:00 +0000</pubDate>
-        
-        <guid>https://agavesunset.github.io/categories/%E6%B5%8B%E8%AF%95/</guid>
-        <description></description>
-        </item>
-        <item>
-        <title>Syntax</title>
-        <link>https://agavesunset.github.io/categories/syntax/</link>
-        <pubDate>Mon, 11 Mar 2019 00:00:00 +0000</pubDate>
-        
-        <guid>https://agavesunset.github.io/categories/syntax/</guid>
-        <description></description>
-        </item>
-        <item>
-        <title>Themes</title>
-        <link>https://agavesunset.github.io/categories/themes/</link>
-        <pubDate>Mon, 11 Mar 2019 00:00:00 +0000</pubDate>
-        
-        <guid>https://agavesunset.github.io/categories/themes/</guid>
-        <description></description>
-        </item>
-        <item>
-        <title>Test With Whitespaces</title>
-        <link>https://agavesunset.github.io/categories/test-with-whitespaces/</link>
-        <pubDate>Sat, 09 Mar 2019 00:00:00 +0000</pubDate>
-        
-        <guid>https://agavesunset.github.io/categories/test-with-whitespaces/</guid>
-        <description></description>
         </item>
         
     </channel>
