@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Docs_文档 on SPACE_MING</title>
+    <link>https://agavesunset.github.io/docs/</link>
+    <description>Recent content in Docs_文档 on SPACE_MING</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <copyright>© 2026 龙舌兰日落</copyright>
+    <lastBuildDate>Mon, 22 Dec 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://agavesunset.github.io/docs/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>z-image-turbo的种子多样性研究，可泛化至qwen系列等低随机性模型</title>
+      <link>https://agavesunset.github.io/docs/nanobanana_2/</link>
+      <pubDate>Mon, 22 Dec 2025 00:00:00 +0000</pubDate>
+      
+      <guid>https://agavesunset.github.io/docs/nanobanana_2/</guid>
+      <description></description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://agavesunset.github.io/docs/nanobanana_2/featured.png" />
+    </item>
+    
+    <item>
+      <title>使用Nanobanana Pro快速创建一系列产品图</title>
+      <link>https://agavesunset.github.io/docs/nanobanana_3/</link>
+      <pubDate>Mon, 22 Dec 2025 00:00:00 +0000</pubDate>
+      
+      <guid>https://agavesunset.github.io/docs/nanobanana_3/</guid>
+      <description></description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://agavesunset.github.io/docs/nanobanana_3/featured2.png" />
+    </item>
+    
+    <item>
+      <title>z-image-turbo的最佳画质研究</title>
+      <link>https://agavesunset.github.io/docs/nanobanana_1/</link>
+      <pubDate>Sun, 22 Dec 2024 00:00:00 +0000</pubDate>
+      
+      <guid>https://agavesunset.github.io/docs/nanobanana_1/</guid>
+      <description>记录 z-image-turbo 的采样多样性、可视化方法，以及在 qwen 系列上的实验观察。</description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://agavesunset.github.io/docs/nanobanana_1/featured.jpg" />
+    </item>
+    
+  </channel>
+</rss>

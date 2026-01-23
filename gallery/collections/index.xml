@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>合集 on SPACE_MING</title>
+    <link>https://agavesunset.github.io/gallery/collections/</link>
+    <description>Recent content in 合集 on SPACE_MING</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <copyright>© 2026 龙舌兰日落</copyright>
+    <lastBuildDate>Wed, 01 Jan 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://agavesunset.github.io/gallery/collections/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>合集 2025</title>
+      <link>https://agavesunset.github.io/gallery/collections/album-2025/</link>
+      <pubDate>Wed, 01 Jan 2025 00:00:00 +0000</pubDate>
+      
+      <guid>https://agavesunset.github.io/gallery/collections/album-2025/</guid>
+      <description>&lt;div id=&#34;gallery-e8d0b785cca4b89e46580e5c2131bdb5&#34; class=&#34;gallery&#34;&gt;
+  
+![作品](01.png)
+![作品](02.png)
+![作品](03.png)
+&lt;/div&gt;</description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://agavesunset.github.io/gallery/collections/album-2025/cover.png" />
+    </item>
+    
+    <item>
+      <title>合集 2024</title>
+      <link>https://agavesunset.github.io/gallery/collections/album-2024/</link>
+      <pubDate>Sun, 01 Dec 2024 00:00:00 +0000</pubDate>
+      
+      <guid>https://agavesunset.github.io/gallery/collections/album-2024/</guid>
+      <description>&lt;div id=&#34;gallery-0531d9abbd71c4555b28758908e523c6&#34; class=&#34;gallery&#34;&gt;
+  
+![作品](04.png)
+![作品](02.png)
+&lt;/div&gt;</description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://agavesunset.github.io/gallery/collections/album-2024/cover.png" />
+    </item>
+    
+  </channel>
+</rss>
