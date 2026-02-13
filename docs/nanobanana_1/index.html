@@ -277,6 +277,10 @@
     
 
 
+
+
+
+
   
 
   
@@ -406,19 +410,56 @@
 
       
         
-  <a
-  href="/gallery/"
-  
-  class="flex items-center hover:text-primary-600 dark:hover:text-primary-400"
-  aria-label="Gallery_画廊"
-  title="画廊">
-  
-  
-    <p class="text-base font-medium">
-      Gallery_画廊
-    </p>
-  
-</a>
+  <div>
+  <div class="cursor-pointer flex items-center nested-menu">
+    
+    <a
+      
+        href="/gallery/"
+        
+      
+      aria-label="Gallery_画廊"
+      class="text-base font-medium hover:text-primary-600 dark:hover:text-primary-400"
+      title="画廊">
+      <p>
+        Gallery_画廊
+      </p>
+    </a>
+    <span>
+      <span class="relative block icon"><svg
+  xmlns="http://www.w3.org/2000/svg"
+  viewBox="0 0 20 20"
+  fill="currentColor"
+  aria-hidden="true"
+>
+  <path
+    fill-rule="evenodd"
+    d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z"
+    clip-rule="evenodd"
+  />
+</svg>
+</span>
+    </span>
+  </div>
+  <div class="absolute menuhide">
+    <div class="pt-2 p-5 mt-2 rounded-xl backdrop-blur shadow-2xl">
+      <div class="flex flex-col space-y-3">
+        
+          <a
+            href="/gallery/collections/"
+            
+            aria-label="作品集"
+            class="flex items-center hover:text-primary-600 dark:hover:text-primary-400">
+            
+            <p class="text-sm font-sm" title="合集">
+              作品集
+            </p>
+          </a>
+        
+      </div>
+    </div>
+  </div>
+</div>
 
 
 
@@ -585,18 +626,44 @@
   <li class="mt-1">
   <a
     href="/gallery/"
-    
-    class="flex items-center hover:text-primary-600 dark:hover:text-primary-400"
     aria-label="Gallery_画廊"
-    title="画廊">
+    class="flex items-center hover:text-primary-600 dark:hover:text-primary-400">
     
-    
-      <p class="text-bg font-bg">
-        Gallery_画廊
-      </p>
-    
+    <p class="text-bg font-bg" title="画廊">
+      Gallery_画廊
+    </p>
+    <span>
+      <span class="relative block icon"><svg
+  xmlns="http://www.w3.org/2000/svg"
+  viewBox="0 0 20 20"
+  fill="currentColor"
+  aria-hidden="true"
+>
+  <path
+    fill-rule="evenodd"
+    d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z"
+    clip-rule="evenodd"
+  />
+</svg>
+</span>
+    </span>
   </a>
 </li>
+
+  <li class="mt-1">
+    <a
+      href="/gallery/collections/"
+      
+      aria-label="作品集"
+      class="flex items-center hover:text-primary-600 dark:hover:text-primary-400">
+      
+      <p class="text-sm font-small" title="合集">
+        作品集
+      </p>
+    </a>
+  </li>
+
+<li class="mb-2"></li>
 
 
 
@@ -704,7 +771,7 @@
     
     <img
       id="background-image"
-      src="/docs/nanobanana_1/featured_hu_e7886ac0279a85ab.jpg"
+      src="/docs/nanobanana_1/featured_hu_b951d9aafd0e8f09.jpg"
       alt="z-image-turbo的最佳画质研究"
       loading="eager"
       decoding="async"
@@ -729,7 +796,7 @@
       integrity="sha512-YFs7lCgY8KtacXrkRhNexGuO5aKtEq5W&#43;5DcKnbOMMOI&#43;f7IvMGNsVvUfj&#43;ooJ13n6EqqcGEz2FKMVvHLGwWPQ=="
       data-blur-id="background-blur"
       data-image-id="background-image"
-      data-image-url="/docs/nanobanana_1/featured_hu_e7886ac0279a85ab.jpg"></script>
+      data-image-url="/docs/nanobanana_1/featured_hu_b951d9aafd0e8f09.jpg"></script>
   
       
     
@@ -1098,7 +1165,7 @@
   
     <div class="flex-none relative overflow-hidden thumbnail_card_related">
       <img
-        src="/gallery/collections/album-2024/cover_hu_e1489c84fedc19cb.png"
+        src="/gallery/collections/album-2024/cover_hu_159871f4e2a46e3b.png"
         alt="合集 2024"
         loading="lazy"
         decoding="async"

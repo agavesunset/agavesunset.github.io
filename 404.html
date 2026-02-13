@@ -276,6 +276,10 @@
     
 
 
+
+
+
+
   
 
   
@@ -405,19 +409,56 @@
 
       
         
-  <a
-  href="/gallery/"
-  
-  class="flex items-center hover:text-primary-600 dark:hover:text-primary-400"
-  aria-label="Gallery_画廊"
-  title="画廊">
-  
-  
-    <p class="text-base font-medium">
-      Gallery_画廊
-    </p>
-  
-</a>
+  <div>
+  <div class="cursor-pointer flex items-center nested-menu">
+    
+    <a
+      
+        href="/gallery/"
+        
+      
+      aria-label="Gallery_画廊"
+      class="text-base font-medium hover:text-primary-600 dark:hover:text-primary-400"
+      title="画廊">
+      <p>
+        Gallery_画廊
+      </p>
+    </a>
+    <span>
+      <span class="relative block icon"><svg
+  xmlns="http://www.w3.org/2000/svg"
+  viewBox="0 0 20 20"
+  fill="currentColor"
+  aria-hidden="true"
+>
+  <path
+    fill-rule="evenodd"
+    d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z"
+    clip-rule="evenodd"
+  />
+</svg>
+</span>
+    </span>
+  </div>
+  <div class="absolute menuhide">
+    <div class="pt-2 p-5 mt-2 rounded-xl backdrop-blur shadow-2xl">
+      <div class="flex flex-col space-y-3">
+        
+          <a
+            href="/gallery/collections/"
+            
+            aria-label="作品集"
+            class="flex items-center hover:text-primary-600 dark:hover:text-primary-400">
+            
+            <p class="text-sm font-sm" title="合集">
+              作品集
+            </p>
+          </a>
+        
+      </div>
+    </div>
+  </div>
+</div>
 
 
 
@@ -584,18 +625,44 @@
   <li class="mt-1">
   <a
     href="/gallery/"
-    
-    class="flex items-center hover:text-primary-600 dark:hover:text-primary-400"
     aria-label="Gallery_画廊"
-    title="画廊">
+    class="flex items-center hover:text-primary-600 dark:hover:text-primary-400">
     
-    
-      <p class="text-bg font-bg">
-        Gallery_画廊
-      </p>
-    
+    <p class="text-bg font-bg" title="画廊">
+      Gallery_画廊
+    </p>
+    <span>
+      <span class="relative block icon"><svg
+  xmlns="http://www.w3.org/2000/svg"
+  viewBox="0 0 20 20"
+  fill="currentColor"
+  aria-hidden="true"
+>
+  <path
+    fill-rule="evenodd"
+    d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z"
+    clip-rule="evenodd"
+  />
+</svg>
+</span>
+    </span>
   </a>
 </li>
+
+  <li class="mt-1">
+    <a
+      href="/gallery/collections/"
+      
+      aria-label="作品集"
+      class="flex items-center hover:text-primary-600 dark:hover:text-primary-400">
+      
+      <p class="text-sm font-small" title="合集">
+        作品集
+      </p>
+    </a>
+  </li>
+
+<li class="mb-2"></li>
 
 
 

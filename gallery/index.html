@@ -278,7 +278,13 @@
   
     
 
+
+
+
+
   
+  
+
   
   
   <link
@@ -286,6 +292,17 @@
     rel="stylesheet"
     href="/css/components/gallery.a340929bbb811e8e4d4a0f98c05ad907342e2adef8546efa14cc42546f8a8b87827e0e981916da043c388dfc064eeaa0812a210e6cf70be45e22cd385a560ba1.css"
     integrity="sha512-o0CSm7uBHo5NSg&#43;YwFrZBzQuKt74VG76FMxCVG&#43;Ki4eCfg6YGRbaBDw4jfwGTuqggSohDmz3C&#43;ReIs04WlYLoQ==">
+
+  
+    
+    
+    <link
+      type="text/css"
+      rel="stylesheet"
+      href="/lib/zoom/style.f9a72b47bc4fa9af793cb3460f24f18e14f340d35d7f0c90de97708fc55237baeff9314ce9011515e687817c471dfa9ac6c6d9a365442cac8747e085de52ac7e.css"
+      integrity="sha512-&#43;acrR7xPqa95PLNGDyTxjhTzQNNdfwyQ3pdwj8VSN7rv&#43;TFM6QEVFeaHgXxHHfqaxsbZo2VELKyHR&#43;CF3lKsfg==">
+  
+
   
   
   <script
@@ -293,12 +310,24 @@
     type="text/javascript"
     src="/lib/packery/packery.pkgd.min.8b0cbb30a72acb6a0188f690a3768e9c531f056dcf18df8d739ececb994387d28137ed684b2f23da6df5a0c416eb4f8818d5db4493419a9b97c7452ac602fbd4.js"
     integrity="sha512-iwy7MKcqy2oBiPaQo3aOnFMfBW3PGN&#43;Nc57Oy5lDh9KBN&#43;1oSy8j2m31oMQW60&#43;IGNXbRJNBmpuXx0UqxgL71A=="></script>
+
   
   
   <script
+    defer
     type="text/javascript"
     src="/js/shortcodes/gallery.min.066f04f8dacc3930df93010e4f91004c55c8971379324510b9703d5f02dcb9c0379e0d9be24c4da79e2a004cdf006f5d2990ef8899c528459515d1833b5c9459.js"
     integrity="sha512-Bm8E&#43;NrMOTDfkwEOT5EATFXIlxN5MkUQuXA9XwLcucA3ng2b4kxNp54qAEzfAG9dKZDviJnFKEWVFdGDO1yUWQ=="></script>
+
+  
+    
+    
+    <script
+      defer
+      type="text/javascript"
+      src="/lib/zoom/zoom.min.umd.a527109b68c082a70f3697716dd72a9d5aa8b545cf800cecbbc7399f2ca6f6e0ce3e431f2062b48bbfa47c9ea42822714060bef309be073f49b9c0e30d318d7b.js"
+      integrity="sha512-pScQm2jAgqcPNpdxbdcqnVqotUXPgAzsu8c5nyym9uDOPkMfIGK0i7&#43;kfJ6kKCJxQGC&#43;8wm&#43;Bz9JucDjDTGNew=="></script>
+  
 
 
   
@@ -430,19 +459,56 @@
 
       
         
-  <a
-  href="/gallery/"
-  
-  class="flex items-center hover:text-primary-600 dark:hover:text-primary-400"
-  aria-label="Gallery_画廊"
-  title="画廊">
-  
-  
-    <p class="text-base font-medium">
-      Gallery_画廊
-    </p>
-  
-</a>
+  <div>
+  <div class="cursor-pointer flex items-center nested-menu">
+    
+    <a
+      
+        href="/gallery/"
+        
+      
+      aria-label="Gallery_画廊"
+      class="text-base font-medium hover:text-primary-600 dark:hover:text-primary-400"
+      title="画廊">
+      <p>
+        Gallery_画廊
+      </p>
+    </a>
+    <span>
+      <span class="relative block icon"><svg
+  xmlns="http://www.w3.org/2000/svg"
+  viewBox="0 0 20 20"
+  fill="currentColor"
+  aria-hidden="true"
+>
+  <path
+    fill-rule="evenodd"
+    d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z"
+    clip-rule="evenodd"
+  />
+</svg>
+</span>
+    </span>
+  </div>
+  <div class="absolute menuhide">
+    <div class="pt-2 p-5 mt-2 rounded-xl backdrop-blur shadow-2xl">
+      <div class="flex flex-col space-y-3">
+        
+          <a
+            href="/gallery/collections/"
+            
+            aria-label="作品集"
+            class="flex items-center hover:text-primary-600 dark:hover:text-primary-400">
+            
+            <p class="text-sm font-sm" title="合集">
+              作品集
+            </p>
+          </a>
+        
+      </div>
+    </div>
+  </div>
+</div>
 
 
 
@@ -609,18 +675,44 @@
   <li class="mt-1">
   <a
     href="/gallery/"
-    
-    class="flex items-center hover:text-primary-600 dark:hover:text-primary-400"
     aria-label="Gallery_画廊"
-    title="画廊">
+    class="flex items-center hover:text-primary-600 dark:hover:text-primary-400">
     
-    
-      <p class="text-bg font-bg">
-        Gallery_画廊
-      </p>
-    
+    <p class="text-bg font-bg" title="画廊">
+      Gallery_画廊
+    </p>
+    <span>
+      <span class="relative block icon"><svg
+  xmlns="http://www.w3.org/2000/svg"
+  viewBox="0 0 20 20"
+  fill="currentColor"
+  aria-hidden="true"
+>
+  <path
+    fill-rule="evenodd"
+    d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z"
+    clip-rule="evenodd"
+  />
+</svg>
+</span>
+    </span>
   </a>
 </li>
+
+  <li class="mt-1">
+    <a
+      href="/gallery/collections/"
+      
+      aria-label="作品集"
+      class="flex items-center hover:text-primary-600 dark:hover:text-primary-400">
+      
+      <p class="text-sm font-small" title="合集">
+        作品集
+      </p>
+    </a>
+  </li>
+
+<li class="mb-2"></li>
 
 
 
@@ -733,7 +825,7 @@
     
     <img
       id="background-image"
-      src="/img/01_hu_81422d8dfdb21c8c.jpg"
+      src="/img/01_hu_f4fbe38bee2d9eea.jpg"
       alt="画廊"
       loading="eager"
       decoding="async"
@@ -758,7 +850,7 @@
       integrity="sha512-YFs7lCgY8KtacXrkRhNexGuO5aKtEq5W&#43;5DcKnbOMMOI&#43;f7IvMGNsVvUfj&#43;ooJ13n6EqqcGEz2FKMVvHLGwWPQ=="
       data-blur-id="background-blur"
       data-image-id="background-image"
-      data-image-url="/img/01_hu_81422d8dfdb21c8c.jpg"></script>
+      data-image-url="/img/01_hu_f4fbe38bee2d9eea.jpg"></script>
   
     
   
@@ -838,350 +930,17 @@
   
   
   
+  
+  
 
   
+    
+    
+      
+    
     
       <section class="mt-12">
-        <h2 class="mb-6 text-2xl font-bold text-neutral-700 dark:text-neutral-300">合集</h2>
-        <section class="w-full grid gap-4 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4">
-          
-            
-
-
-
-
-
-
-  
-  
-    
-      
-        
-      
-    
-
-    
-    
-      
-      
-        
-      
-        
-      
-        
-      
-    
-
-    
-    
-
-    
-    
-      
-        
-        
-          
-        
-      
-    
-  
-
-
-
-<article
-  class="relative min-h-full min-w-full overflow-hidden rounded border border-2 border-neutral-200 shadow-2xl dark:border-neutral-700">
-  
-    <div class="flex-none relative overflow-hidden thumbnail_card">
-      <img
-        src="/gallery/collections/album-2025/cover_hu_224d276fd83068c4.png"
-        alt="合集 2025"
-        loading="lazy"
-        decoding="async"
-        class="not-prose absolute inset-0 w-full h-full object-cover">
-    </div>
-  
-  
-  <div class="px-6 py-4">
-    <header>
-      <a
-        
-          href="/gallery/collections/album-2025/"
-        
-        class="not-prose before:absolute before:inset-0 decoration-primary-500 dark:text-neutral text-xl font-bold text-neutral-800 hover:underline hover:underline-offset-2">
-        <h2>
-          合集 2025
-          
-        </h2>
-      </a>
-    </header>
-    <div class="text-sm text-neutral-500 dark:text-neutral-400">
-      
-
-
-
-
-
-
-
-  
-
-  
-  
-  
-    
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-
-  <div class="flex flex-row flex-wrap items-center">
-    
-    
-
-    
-    
-  </div>
-
-  
-    <div class="flex flex-row flex-wrap items-center">
-      
-        
-          
-        
-      
-        
-      
-        
-      
-        
-      
-    </div>
-  
-
-  
-  
-    <div class="flex flex-row flex-wrap items-center">
-      
-        
-      
-        
-          
-        
-      
-        
-      
-        
-          
-        
-      
-    </div>
-  
-
-  
-  
-
-
-
-    </div>
-    
-  </div>
-  <div class="px-6 pt-4 pb-2"></div>
-</article>
-
-          
-            
-
-
-
-
-
-
-  
-  
-    
-      
-        
-      
-    
-
-    
-    
-      
-      
-        
-      
-        
-      
-        
-      
-    
-
-    
-    
-
-    
-    
-      
-        
-        
-          
-        
-      
-    
-  
-
-
-
-<article
-  class="relative min-h-full min-w-full overflow-hidden rounded border border-2 border-neutral-200 shadow-2xl dark:border-neutral-700">
-  
-    <div class="flex-none relative overflow-hidden thumbnail_card">
-      <img
-        src="/gallery/collections/album-2024/cover_hu_e1489c84fedc19cb.png"
-        alt="合集 2024"
-        loading="lazy"
-        decoding="async"
-        class="not-prose absolute inset-0 w-full h-full object-cover">
-    </div>
-  
-  
-  <div class="px-6 py-4">
-    <header>
-      <a
-        
-          href="/gallery/collections/album-2024/"
-        
-        class="not-prose before:absolute before:inset-0 decoration-primary-500 dark:text-neutral text-xl font-bold text-neutral-800 hover:underline hover:underline-offset-2">
-        <h2>
-          合集 2024
-          
-        </h2>
-      </a>
-    </header>
-    <div class="text-sm text-neutral-500 dark:text-neutral-400">
-      
-
-
-
-
-
-
-
-  
-
-  
-  
-  
-    
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-
-  <div class="flex flex-row flex-wrap items-center">
-    
-    
-
-    
-    
-  </div>
-
-  
-    <div class="flex flex-row flex-wrap items-center">
-      
-        
-          
-        
-      
-        
-      
-        
-      
-        
-      
-    </div>
-  
-
-  
-  
-    <div class="flex flex-row flex-wrap items-center">
-      
-        
-      
-        
-          
-        
-      
-        
-      
-        
-          
-        
-      
-    </div>
-  
-
-  
-  
-
-
-
-    </div>
-    
-  </div>
-  <div class="px-6 pt-4 pb-2"></div>
-</article>
-
-          
-        </section>
-        <div class="mt-6 flex justify-center">
-          <a href="/gallery/collections/">
-            <button class="bg-transparent hover:text-primary-500 prose dark:prose-invert font-semibold py-2 px-4 border border-primary-500 hover:border-transparent rounded">查看全部合集</button>
-          </a>
-        </div>
-      </section>
-    
-
-    
-      <section class="mt-16">
-        <h2 class="mb-6 text-2xl font-bold text-neutral-700 dark:text-neutral-300">单张</h2>
-        <div class="gallery">
+        <div id="gallery-images" class="gallery" data-packery-gutter="6">
           
             
             
@@ -1198,7 +957,7 @@
                 
               
               <img
-                src="/gallery/images/shot-003/shot_hu_badfae7dd0455e5e.png"
+                src="/gallery/images/shot-003/shot_hu_9b84bc20926a81b4.png"
                 data-zoom-src="/gallery/images/shot-003/shot.png"
                 alt="单张 003"
                 loading="lazy"
@@ -1221,7 +980,7 @@
                 
               
               <img
-                src="/gallery/images/shot-002/shot_hu_419188fee65f18b3.png"
+                src="/gallery/images/shot-002/shot_hu_c402ac5f95608fbb.png"
                 data-zoom-src="/gallery/images/shot-002/shot.png"
                 alt="单张 002"
                 loading="lazy"
@@ -1244,7 +1003,7 @@
                 
               
               <img
-                src="/gallery/images/shot-001/shot_hu_d515a3fef84ad8b9.png"
+                src="/gallery/images/shot-001/shot_hu_1934056980965669.png"
                 data-zoom-src="/gallery/images/shot-001/shot.png"
                 alt="单张 001"
                 loading="lazy"
@@ -1253,12 +1012,20 @@
             
           
         </div>
-        <div class="mt-6 flex justify-center">
-          <a href="/gallery/images/">
-            <button class="bg-transparent hover:text-primary-500 prose dark:prose-invert font-semibold py-2 px-4 border border-primary-500 hover:border-transparent rounded">查看全部图片</button>
-          </a>
-        </div>
       </section>
+      
+        <script>
+          window.addEventListener("load", function () {
+            if (window.mediumZoom) {
+              mediumZoom(document.querySelectorAll("#gallery-images img:not(.nozoom)"), {
+                margin: 24,
+                background: "rgba(0, 0, 0, 0.7)",
+                scrollOffset: 0,
+              });
+            }
+          });
+        </script>
+      
     
   
 
