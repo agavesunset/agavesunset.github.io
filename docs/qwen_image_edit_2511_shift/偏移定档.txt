@@ -1,0 +1,81 @@
+Qwen-Image-Edit-2511 在 ComfyUI 的偏移问题：根因与结构性修复
+1. 现象：两种最典型的“偏移”
+
+在ComfyUI 使用 Qwen-Image-Edit-2511 的官方工作流进行推理时，存在两类稳定可复现的几何问题：
+
+整体平移（Shift）：输出相对输入整体向左/右或上/下移动。
+
+视野拉远/拉近（Zoom out/in）：尤其当输入分辨率超过约 1MP（比如 2MP）时，官方工作流几乎必然出现镜头拉远。
+
+2. 源码层面的机制：TextEncodeQwenImageEditPlus 内部的两条分支
+
+TextEncodeQwenImageEditPlus 内部同时做两类处理：
+
+A) 语义分支（Qwen2.5-VL 图像 token）
+它会把输入图按“总像素约等于 384×384”的规模缩放（保持长宽比），生成用于语义控制的图像 token。
+
+B) 外观/参考分支（VAE → reference_latents）
+仅当 vae 端口接入时执行：它会把输入图按“总像素约等于 1024×1024（≈1MP）”缩放（仍保持长宽比），并将宽高各自 round 到 8 的倍数，然后 VAE encode 得到 reference_latents，写入 conditioning。
+
+3. 为什么 >1MP 会拉远：采样画布与内部 reference_latents 的尺度不一致
+
+在官方 workflow 中，你往往会把图像（例如 2MP）直接 VAEEncode 得到 latent，作为 KSampler.latent_image，这决定了采样画布的 latent 网格尺寸，也决定了输出保持 2MP。
+
+但与此同时，TextEncode 内部生成的 reference_latents 来自“被缩到 ~1MP（且 8 倍数对齐）”的那套网格。
+
+于是同一次采样里出现了两套尺度基准：
+
+采样画布：2MP latent 网格
+
+条件外观锚点：~1MP（+8 倍数对齐）reference_latents 网格
+
+模型在扩散过程中需要同时满足这两种约束，而最常见的全局自洽方式就是做几何补偿：
+
+通过整体缩放让画布“更像”参考（表现为 zoom out/in）
+
+通过整体平移调整对齐（表现为 shift）
+
+因此当输入超过 1MP、画布更大时，两套尺度差更明显。
+
+4. 修复思路：关闭内部 ~1MP reference 分支，改用外部“同网格 reference_latents”
+
+核心调整：
+
+断开 TextEncodeQwenImageEditPlus的vae输入口，
+转而让 TextEncode 只负责语义 token + 文本指令，彻底关闭内部那条“~1MP 缩放 + VAE encode → reference_latents”的隐式分支。
+
+在外部显式注入 reference_latents（ReferenceLatent）
+对输入图（即便是 2MP）直接做 VAEEncode 得到 latent，并把这同一份 latent 同时用于：
+
+KSampler.latent_image（采样画布）
+
+ReferenceLatent.latent（外部显式 reference_latents）
+
+简单来说：跳过了TextEncodeQwenImageEditPlus节点里的那条“先缩到 ~1MP 再 VAE encode”的支线，直接用“与画布同分辨率、同网格”的 latent 作为 reference_latents。
+
+5. 为什么必须 P/N 对称注入 ReferenceLatent
+
+我在 positive 和 negative 两条 conditioning 上都注入了 ReferenceLatent（对称写入）。原因很直接：
+
+CFG 的形式是 uncond + cfg * (cond - uncond)。
+如果 reference_latents 只在 cond 存在，而 uncond 不存在（或策略不同），那么 (cond - uncond) 会混入“参考锚点差”，在 cfg>1 时会被放大，容易引发过饱和或失真。
+
+对称注入的作用是：让 P/N 两支共享同一参考基准，使 CFG 的差分项主要表达“编辑意图差”，而不是“参考锚点差”。
+
+这里引出了一个同源结论，例如zimageturbo这种蒸馏模型，他的cfg需要控制在1，并且不能使用negative（这里是官方描述），因为当cfg为1时，ksampler不会对negative进行任何处理，当cfg超过1时就会即使negative为空也会进行处理，
+在此原理上，如果使用不使用成对的ReferenceLatent，就需要控制cfg为1。
+
+
+6. 和edit2509的workflow相比新增的节点 Edit Model Reference Method（简单说明）
+
+Edit Model Reference Method 节点的作用是给 conditioning 设置 reference_latents_method，声明模型/采样器“如何使用 reference_latents（索引/对齐/注入策略）”。
+
+常见选项的用途可以简单理解为：
+
+index_timestep_zero：更偏稳定的结构对齐基线
+
+index：更偏 batch 中按样本索引对应 reference
+
+offset：更偏多参考融合时区分 reference 的策略
+
+uxo/uno：偏特定体系兼容选项

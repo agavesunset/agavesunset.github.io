@@ -3,8 +3,98 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
 
   <url>
+    <loc>https://agavesunset.github.io/tags/comfyui/</loc>
+    <lastmod>2026-03-03T00:00:00+00:00</lastmod>
+    <changefreq>always</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
     <loc>https://agavesunset.github.io/docs/</loc>
-    <lastmod>2026-02-23T00:00:00+00:00</lastmod>
+    <lastmod>2026-03-03T00:00:00+00:00</lastmod>
+    <changefreq>always</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://agavesunset.github.io/tags/qwen-image-edit/</loc>
+    <lastmod>2026-03-03T00:00:00+00:00</lastmod>
+    <changefreq>always</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://agavesunset.github.io/docs/qwen_image_edit_2511_shift/</loc>
+    <lastmod>2026-03-03T00:00:00+00:00</lastmod>
+    <changefreq>always</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://agavesunset.github.io/tags/</loc>
+    <lastmod>2026-03-03T00:00:00+00:00</lastmod>
+    <changefreq>always</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://agavesunset.github.io/tags/%E5%BC%80%E6%BA%90%E6%A8%A1%E5%9E%8B/</loc>
+    <lastmod>2026-03-03T00:00:00+00:00</lastmod>
+    <changefreq>always</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://agavesunset.github.io/</loc>
+    <lastmod>2026-03-03T00:00:00+00:00</lastmod>
+    <changefreq>always</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://agavesunset.github.io/gallery/</loc>
+    <lastmod>2026-02-25T17:02:22+00:00</lastmod>
+    <changefreq>always</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://agavesunset.github.io/tags/screenshot/</loc>
+    <lastmod>2026-02-25T17:02:22+00:00</lastmod>
+    <changefreq>always</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://agavesunset.github.io/gallery/images/</loc>
+    <lastmod>2026-02-25T17:02:22+00:00</lastmod>
+    <changefreq>always</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://agavesunset.github.io/gallery/images/shot-011/</loc>
+    <lastmod>2026-02-25T17:02:22+00:00</lastmod>
+    <changefreq>always</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://agavesunset.github.io/gallery/images/shot-010/</loc>
+    <lastmod>2026-02-25T17:02:06+00:00</lastmod>
+    <changefreq>always</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://agavesunset.github.io/gallery/images/shot-009/</loc>
+    <lastmod>2026-02-24T17:51:45+00:00</lastmod>
+    <changefreq>always</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://agavesunset.github.io/gallery/images/shot-008/</loc>
+    <lastmod>2026-02-24T17:51:32+00:00</lastmod>
+    <changefreq>always</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://agavesunset.github.io/gallery/images/shot-007/</loc>
+    <lastmod>2026-02-24T16:11:08+00:00</lastmod>
+    <changefreq>always</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://agavesunset.github.io/gallery/images/shot-006/</loc>
+    <lastmod>2026-02-24T16:10:13+00:00</lastmod>
     <changefreq>always</changefreq>
     <priority>0.5</priority>
   </url>
@@ -15,8 +105,26 @@
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://agavesunset.github.io/</loc>
-    <lastmod>2026-02-23T00:00:00+00:00</lastmod>
+    <loc>https://agavesunset.github.io/tags/ai/</loc>
+    <lastmod>2026-02-20T19:15:42+00:00</lastmod>
+    <changefreq>always</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://agavesunset.github.io/gallery/images/shot-005/</loc>
+    <lastmod>2026-02-20T19:15:42+00:00</lastmod>
+    <changefreq>always</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://agavesunset.github.io/tags/generation/</loc>
+    <lastmod>2026-02-20T19:15:42+00:00</lastmod>
+    <changefreq>always</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://agavesunset.github.io/gallery/images/shot-004/</loc>
+    <lastmod>2026-02-20T18:56:56+00:00</lastmod>
     <changefreq>always</changefreq>
     <priority>0.5</priority>
   </url>
@@ -39,7 +147,19 @@
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://agavesunset.github.io/gallery/images/</loc>
+    <loc>https://agavesunset.github.io/tags/motion/</loc>
+    <lastmod>2025-01-04T00:00:00+00:00</lastmod>
+    <changefreq>always</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://agavesunset.github.io/tags/night/</loc>
+    <lastmod>2025-01-04T00:00:00+00:00</lastmod>
+    <changefreq>always</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://agavesunset.github.io/tags/street/</loc>
     <lastmod>2025-01-04T00:00:00+00:00</lastmod>
     <changefreq>always</changefreq>
     <priority>0.5</priority>
@@ -51,14 +171,32 @@
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://agavesunset.github.io/gallery/</loc>
-    <lastmod>2025-01-04T00:00:00+00:00</lastmod>
+    <loc>https://agavesunset.github.io/tags/architecture/</loc>
+    <lastmod>2025-01-03T00:00:00+00:00</lastmod>
+    <changefreq>always</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://agavesunset.github.io/tags/city/</loc>
+    <lastmod>2025-01-03T00:00:00+00:00</lastmod>
+    <changefreq>always</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://agavesunset.github.io/tags/daylight/</loc>
+    <lastmod>2025-01-03T00:00:00+00:00</lastmod>
     <changefreq>always</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://agavesunset.github.io/gallery/images/shot-002/</loc>
     <lastmod>2025-01-03T00:00:00+00:00</lastmod>
+    <changefreq>always</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://agavesunset.github.io/tags/people/</loc>
+    <lastmod>2025-01-02T00:00:00+00:00</lastmod>
     <changefreq>always</changefreq>
     <priority>0.5</priority>
   </url>
@@ -104,11 +242,6 @@
   </url>
   <url>
     <loc>https://agavesunset.github.io/series/</loc>
-    <changefreq>always</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://agavesunset.github.io/tags/</loc>
     <changefreq>always</changefreq>
     <priority>0.5</priority>
   </url>

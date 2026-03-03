@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>ComfyUI on SPACE_MING</title>
+    <link>https://agavesunset.github.io/tags/comfyui/</link>
+    <description>Recent content in ComfyUI on SPACE_MING</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <copyright>© 2026 龙舌兰日落</copyright>
+    <lastBuildDate>Tue, 03 Mar 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://agavesunset.github.io/tags/comfyui/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Qwen-Image-Edit-2511 在 ComfyUI 的偏移问题：根因与结构性修复</title>
+      <link>https://agavesunset.github.io/docs/qwen_image_edit_2511_shift/</link>
+      <pubDate>Tue, 03 Mar 2026 00:00:00 +0000</pubDate>
+      
+      <guid>https://agavesunset.github.io/docs/qwen_image_edit_2511_shift/</guid>
+      <description>本文梳理 Qwen-Image-Edit-2511 在 ComfyUI 中出现 shift/zoom 偏移的根因，并给出可复现的结构性修复方案。</description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://agavesunset.github.io/docs/qwen_image_edit_2511_shift/featured.jpg" />
+    </item>
+    
+  </channel>
+</rss>
