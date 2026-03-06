@@ -29,5 +29,15 @@
       <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://agavesunset.github.io/docs/qwen_image_edit_2511/featured.jpg" />
     </item>
     
+    <item>
+      <title>本地 &#43; RunningHub API 的混合架构：在显存受限下完成高质量重绘</title>
+      <link>https://agavesunset.github.io/docs/rh-api/</link>
+      <pubDate>Sat, 06 Sep 2025 00:00:00 +0000</pubDate>
+      
+      <guid>https://agavesunset.github.io/docs/rh-api/</guid>
+      <description>记录一套本地与云端协同的混合工作流：本地负责批处理与数据管理，云端负责重绘、修复与放大，以应对显存与节点能力限制。</description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://agavesunset.github.io/docs/rh-api/featured.webp" />
+    </item>
+    
   </channel>
 </rss>

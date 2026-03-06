@@ -63,6 +63,24 @@
     <priority>0.5</priority>
   </url>
   <url>
+    <loc>https://agavesunset.github.io/tags/flux-kontext/</loc>
+    <lastmod>2025-10-06T00:00:00+00:00</lastmod>
+    <changefreq>always</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://agavesunset.github.io/tags/runninghub/</loc>
+    <lastmod>2025-10-06T00:00:00+00:00</lastmod>
+    <changefreq>always</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://agavesunset.github.io/docs/rh-api/</loc>
+    <lastmod>2025-10-06T00:00:00+00:00</lastmod>
+    <changefreq>always</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
     <loc>https://agavesunset.github.io/docs/nanobanana_1/</loc>
     <lastmod>2025-12-24T00:00:00+00:00</lastmod>
     <changefreq>always</changefreq>
