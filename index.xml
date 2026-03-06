@@ -7,12 +7,12 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
     <copyright>© 2026 龙舌兰日落</copyright>
-    <lastBuildDate>Tue, 03 Mar 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://agavesunset.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 15 Jan 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://agavesunset.github.io/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Qwen-Image-Edit-2511 在 ComfyUI 的偏移问题：根因与结构性修复</title>
       <link>https://agavesunset.github.io/docs/qwen_image_edit_2511_shift/</link>
-      <pubDate>Tue, 03 Mar 2026 00:00:00 +0000</pubDate>
+      <pubDate>Thu, 15 Jan 2026 00:00:00 +0000</pubDate>
       
       <guid>https://agavesunset.github.io/docs/qwen_image_edit_2511_shift/</guid>
       <description>本文梳理 Qwen-Image-Edit-2511 在 ComfyUI 中出现 shift/zoom 偏移的根因，并给出可复现的结构性修复方案。</description>
@@ -20,114 +20,13 @@
     </item>
     
     <item>
-      <title>截图 170222</title>
-      <link>https://agavesunset.github.io/gallery/images/shot-011/</link>
-      <pubDate>Wed, 25 Feb 2026 17:02:22 +0000</pubDate>
-      
-      <guid>https://agavesunset.github.io/gallery/images/shot-011/</guid>
-      <description></description>
-      
-    </item>
-    
-    <item>
-      <title>截图 170206</title>
-      <link>https://agavesunset.github.io/gallery/images/shot-010/</link>
-      <pubDate>Wed, 25 Feb 2026 17:02:06 +0000</pubDate>
-      
-      <guid>https://agavesunset.github.io/gallery/images/shot-010/</guid>
-      <description></description>
-      
-    </item>
-    
-    <item>
-      <title>截图 175145</title>
-      <link>https://agavesunset.github.io/gallery/images/shot-009/</link>
-      <pubDate>Tue, 24 Feb 2026 17:51:45 +0000</pubDate>
-      
-      <guid>https://agavesunset.github.io/gallery/images/shot-009/</guid>
-      <description></description>
-      
-    </item>
-    
-    <item>
-      <title>截图 175132</title>
-      <link>https://agavesunset.github.io/gallery/images/shot-008/</link>
-      <pubDate>Tue, 24 Feb 2026 17:51:32 +0000</pubDate>
-      
-      <guid>https://agavesunset.github.io/gallery/images/shot-008/</guid>
-      <description></description>
-      
-    </item>
-    
-    <item>
-      <title>截图 161108</title>
-      <link>https://agavesunset.github.io/gallery/images/shot-007/</link>
-      <pubDate>Tue, 24 Feb 2026 16:11:08 +0000</pubDate>
-      
-      <guid>https://agavesunset.github.io/gallery/images/shot-007/</guid>
-      <description></description>
-      
-    </item>
-    
-    <item>
-      <title>截图 161013</title>
-      <link>https://agavesunset.github.io/gallery/images/shot-006/</link>
-      <pubDate>Tue, 24 Feb 2026 16:10:13 +0000</pubDate>
-      
-      <guid>https://agavesunset.github.io/gallery/images/shot-006/</guid>
-      <description></description>
-      
-    </item>
-    
-    <item>
       <title>qwen_image_edit_2511所能完成的task</title>
       <link>https://agavesunset.github.io/docs/qwen_image_edit_2511/</link>
-      <pubDate>Mon, 23 Feb 2026 00:00:00 +0000</pubDate>
+      <pubDate>Fri, 02 Jan 2026 00:00:00 +0000</pubDate>
       
       <guid>https://agavesunset.github.io/docs/qwen_image_edit_2511/</guid>
-      <description>这篇文章用于简单归纳 &lt;code&gt;Qwen-Image-Edit 2511&lt;/code&gt; 能完成的任务类型，方便快速查阅。</description>
+      <description>本文用于简单归纳 &lt;code&gt;Qwen-Image-Edit 2511&lt;/code&gt; 能完成的任务类型，方便快速查阅。</description>
       <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://agavesunset.github.io/docs/qwen_image_edit_2511/featured.jpg" />
-    </item>
-    
-    <item>
-      <title>ComfyUI 00004</title>
-      <link>https://agavesunset.github.io/gallery/images/shot-005/</link>
-      <pubDate>Fri, 20 Feb 2026 19:15:42 +0000</pubDate>
-      
-      <guid>https://agavesunset.github.io/gallery/images/shot-005/</guid>
-      <description></description>
-      
-    </item>
-    
-    <item>
-      <title>ComfyUI 00003</title>
-      <link>https://agavesunset.github.io/gallery/images/shot-004/</link>
-      <pubDate>Fri, 20 Feb 2026 18:56:56 +0000</pubDate>
-      
-      <guid>https://agavesunset.github.io/gallery/images/shot-004/</guid>
-      <description></description>
-      
-    </item>
-    
-    <item>
-      <title>Project_项目</title>
-      <link>https://agavesunset.github.io/projects/</link>
-      <pubDate>Tue, 13 Jan 2026 00:00:00 +0000</pubDate>
-      
-      <guid>https://agavesunset.github.io/projects/</guid>
-      <description>&lt;p&gt;下面是我最近在做的一些项目，主要同步自 GitHub。&lt;/p&gt;
-
-&lt;h2 class=&#34;relative group&#34;&gt;ComfyUI Carry Counter
-    &lt;div id=&#34;comfyui-carry-counter&#34; class=&#34;anchor&#34;&gt;&lt;/div&gt;
-    
-    &lt;span
-        class=&#34;absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none&#34;&gt;
-        &lt;a class=&#34;text-primary-300 dark:text-neutral-700 !no-underline&#34; href=&#34;#comfyui-carry-counter&#34; aria-label=&#34;锚点&#34;&gt;#&lt;/a&gt;
-    &lt;/span&gt;
-    
-&lt;/h2&gt;
-&lt;p&gt;用于解决 ComfyUI 里复杂的 &amp;ldquo;For-Loop&amp;rdquo; 逻辑，方便多主体/多场景批处理。&lt;/p&gt;</description>
-      
     </item>
     
     <item>
@@ -151,51 +50,6 @@
     </item>
     
     <item>
-      <title>单张 003</title>
-      <link>https://agavesunset.github.io/gallery/images/shot-003/</link>
-      <pubDate>Sat, 04 Jan 2025 00:00:00 +0000</pubDate>
-      
-      <guid>https://agavesunset.github.io/gallery/images/shot-003/</guid>
-      <description></description>
-      
-    </item>
-    
-    <item>
-      <title>单张 002</title>
-      <link>https://agavesunset.github.io/gallery/images/shot-002/</link>
-      <pubDate>Fri, 03 Jan 2025 00:00:00 +0000</pubDate>
-      
-      <guid>https://agavesunset.github.io/gallery/images/shot-002/</guid>
-      <description></description>
-      
-    </item>
-    
-    <item>
-      <title>单张 001</title>
-      <link>https://agavesunset.github.io/gallery/images/shot-001/</link>
-      <pubDate>Thu, 02 Jan 2025 00:00:00 +0000</pubDate>
-      
-      <guid>https://agavesunset.github.io/gallery/images/shot-001/</guid>
-      <description></description>
-      
-    </item>
-    
-    <item>
-      <title>合集 2025</title>
-      <link>https://agavesunset.github.io/gallery/collections/album-2025/</link>
-      <pubDate>Wed, 01 Jan 2025 00:00:00 +0000</pubDate>
-      
-      <guid>https://agavesunset.github.io/gallery/collections/album-2025/</guid>
-      <description>&lt;div id=&#34;gallery-e8d0b785cca4b89e46580e5c2131bdb5&#34; class=&#34;gallery&#34;&gt;
-  
-![作品](01.png)
-![作品](02.png)
-![作品](03.png)
-&lt;/div&gt;</description>
-      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://agavesunset.github.io/gallery/collections/album-2025/cover.png" />
-    </item>
-    
-    <item>
       <title>z-image-turbo的最佳画质研究</title>
       <link>https://agavesunset.github.io/docs/nanobanana_1/</link>
       <pubDate>Sun, 22 Dec 2024 00:00:00 +0000</pubDate>
@@ -203,21 +57,6 @@
       <guid>https://agavesunset.github.io/docs/nanobanana_1/</guid>
       <description>记录 z-image-turbo 的采样多样性、可视化方法，以及在 qwen 系列上的实验观察。</description>
       <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://agavesunset.github.io/docs/nanobanana_1/featured.jpg" />
-    </item>
-    
-    <item>
-      <title>合集 2024</title>
-      <link>https://agavesunset.github.io/gallery/collections/album-2024/</link>
-      <pubDate>Sun, 01 Dec 2024 00:00:00 +0000</pubDate>
-      
-      <guid>https://agavesunset.github.io/gallery/collections/album-2024/</guid>
-      <description>&lt;div id=&#34;gallery-0531d9abbd71c4555b28758908e523c6&#34; class=&#34;gallery&#34;&gt;
-  
-![作品](04.png)
-![作品](02.png)
-![作品](05.jpg)
-&lt;/div&gt;</description>
-      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://agavesunset.github.io/gallery/collections/album-2024/cover.png" />
     </item>
     
   </channel>

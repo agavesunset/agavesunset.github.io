@@ -7,16 +7,26 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
     <copyright>© 2026 龙舌兰日落</copyright>
-    <lastBuildDate>Tue, 03 Mar 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://agavesunset.github.io/tags/qwen-image-edit/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 15 Jan 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://agavesunset.github.io/tags/qwen-image-edit/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Qwen-Image-Edit-2511 在 ComfyUI 的偏移问题：根因与结构性修复</title>
       <link>https://agavesunset.github.io/docs/qwen_image_edit_2511_shift/</link>
-      <pubDate>Tue, 03 Mar 2026 00:00:00 +0000</pubDate>
+      <pubDate>Thu, 15 Jan 2026 00:00:00 +0000</pubDate>
       
       <guid>https://agavesunset.github.io/docs/qwen_image_edit_2511_shift/</guid>
       <description>本文梳理 Qwen-Image-Edit-2511 在 ComfyUI 中出现 shift/zoom 偏移的根因，并给出可复现的结构性修复方案。</description>
       <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://agavesunset.github.io/docs/qwen_image_edit_2511_shift/featured.jpg" />
+    </item>
+    
+    <item>
+      <title>qwen_image_edit_2511所能完成的task</title>
+      <link>https://agavesunset.github.io/docs/qwen_image_edit_2511/</link>
+      <pubDate>Fri, 02 Jan 2026 00:00:00 +0000</pubDate>
+      
+      <guid>https://agavesunset.github.io/docs/qwen_image_edit_2511/</guid>
+      <description>本文用于简单归纳 &lt;code&gt;Qwen-Image-Edit 2511&lt;/code&gt; 能完成的任务类型，方便快速查阅。</description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://agavesunset.github.io/docs/qwen_image_edit_2511/featured.jpg" />
     </item>
     
   </channel>

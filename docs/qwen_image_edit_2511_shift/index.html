@@ -53,8 +53,8 @@
   <meta property="og:locale" content="zh_cn">
   <meta property="og:type" content="article">
     <meta property="article:section" content="docs">
-    <meta property="article:published_time" content="2026-03-03T00:00:00+00:00">
-    <meta property="article:modified_time" content="2026-03-03T00:00:00+00:00">
+    <meta property="article:published_time" content="2026-01-15T00:00:00+00:00">
+    <meta property="article:modified_time" content="2026-03-05T00:00:00+00:00">
     <meta property="article:tag" content="ComfyUI">
     <meta property="article:tag" content="Qwen-Image-Edit">
     <meta property="article:tag" content="开源模型">
@@ -224,15 +224,15 @@
       "name": "龙舌兰日落"
     },
     "copyrightYear": "2026",
-    "dateCreated": "2026-03-03T00:00:00\u002b00:00",
-    "datePublished": "2026-03-03T00:00:00\u002b00:00",
+    "dateCreated": "2026-01-15T00:00:00\u002b00:00",
+    "datePublished": "2026-01-15T00:00:00\u002b00:00",
     
-    "dateModified": "2026-03-03T00:00:00\u002b00:00",
+    "dateModified": "2026-03-05T00:00:00\u002b00:00",
     
     "keywords": ["ComfyUI","Qwen-Image-Edit","开源模型"],
     
     "mainEntityOfPage": "true",
-    "wordCount": "1416"
+    "wordCount": "1405"
   },
   {
     "@context": "https://schema.org",
@@ -804,6 +804,8 @@
   
 
   
+    
+  
 
   
     
@@ -829,7 +831,7 @@
   <div class="flex flex-row flex-wrap items-center">
     
     
-      <time datetime="2026-03-03T00:00:00&#43;00:00">03-03-2026</time><span class="px-2 text-primary-500">&middot;</span><span>1416 字</span><span class="px-2 text-primary-500">&middot;</span><span title="预计阅读">3 分钟</span><span class="px-2 text-primary-500">&middot;</span><span class="mb-[2px]">
+      <time datetime="2026-01-15T00:00:00&#43;00:00">01-15-2026</time><span class="px-2 text-primary-500">&middot;</span><time datetime="2026-03-05T00:00:00&#43;00:00">更新于: 03-05-2026</time><span class="px-2 text-primary-500">&middot;</span><span>1405 字</span><span class="px-2 text-primary-500">&middot;</span><span title="预计阅读">3 分钟</span><span class="px-2 text-primary-500">&middot;</span><span class="mb-[2px]">
   <span
     id="zen-mode-button"
     class="text-lg hover:text-primary-500"
@@ -963,7 +965,11 @@
     class="min-w-[220px] py-2 border-dotted border-s-1 -ms-5 ps-5 dark:border-neutral-600">
     <nav id="TableOfContents">
   <ul>
-    <li><a href="#1-现象两种典型偏移">1. 现象：两种典型偏移</a></li>
+    <li><a href="#1-现象两种典型偏移">1. 现象：两种典型偏移</a>
+      <ul>
+        <li><a href="#案例复现">案例复现</a></li>
+      </ul>
+    </li>
     <li><a href="#2-源码机制textencodeqwenimageeditplus-的双分支">2. 源码机制：<code>TextEncodeQwenImageEditPlus</code> 的双分支</a>
       <ul>
         <li><a href="#a-语义分支qwen25-vl-图像-token">A) 语义分支（Qwen2.5-VL 图像 token）</a></li>
@@ -988,7 +994,11 @@
     class="py-2 border-dotted border-neutral-300 border-s-1 -ms-5 ps-5 dark:border-neutral-600">
     <nav id="TableOfContents">
   <ul>
-    <li><a href="#1-现象两种典型偏移">1. 现象：两种典型偏移</a></li>
+    <li><a href="#1-现象两种典型偏移">1. 现象：两种典型偏移</a>
+      <ul>
+        <li><a href="#案例复现">案例复现</a></li>
+      </ul>
+    </li>
     <li><a href="#2-源码机制textencodeqwenimageeditplus-的双分支">2. 源码机制：<code>TextEncodeQwenImageEditPlus</code> 的双分支</a>
       <ul>
         <li><a href="#a-语义分支qwen25-vl-图像-token">A) 语义分支（Qwen2.5-VL 图像 token）</a></li>
@@ -1118,7 +1128,7 @@
 
         <div class="article-content max-w-prose mb-20">
           <p>在 ComfyUI 使用 <code>Qwen-Image-Edit-2511</code> 时，如果直接套官方工作流，常见会遇到两类几何异常：整体偏移（shift）和视野拉远/拉近（zoom out/in）。</p>
-<p>这不是“参数没调好”的随机问题，而是工作流里两套参考尺度并存导致的结构性问题。下面按机制拆解，并给出可稳定复现的修复方法。</p>
+<p>这是工作流里两套参考尺度并存导致的结构性问题。下面按机制拆解，并给出可稳定复现的修复方法。</p>
 
 <h2 class="relative group">1. 现象：两种典型偏移
     <div id="1-现象两种典型偏移" class="anchor"></div>
@@ -1133,6 +1143,24 @@
 <li>整体平移（Shift）：输出相对输入整体向左/右或上/下移动。</li>
 <li>视野拉远/拉近（Zoom out/in）：当输入分辨率超过约 <code>1MP</code>（例如 <code>2MP</code>）时，官方流程更容易出现镜头拉远。</li>
 </ul>
+
+<h3 class="relative group">案例复现
+    <div id="案例复现" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none">
+        <a class="text-primary-300 dark:text-neutral-700 !no-underline" href="#%e6%a1%88%e4%be%8b%e5%a4%8d%e7%8e%b0" aria-label="锚点">#</a>
+    </span>
+    
+</h3>
+<div style="display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;">
+  <img src="/gallery/images/shot-006.png" alt="案例复现 006" style="width:100%;aspect-ratio:1 / 1;object-fit:cover;border-radius:12px;">
+  <img src="/gallery/images/shot-007.png" alt="案例复现 007" style="width:100%;aspect-ratio:1 / 1;object-fit:cover;border-radius:12px;">
+  <img src="/gallery/images/shot-008.png" alt="案例复现 008" style="width:100%;aspect-ratio:1 / 1;object-fit:cover;border-radius:12px;">
+  <img src="/gallery/images/shot-009.png" alt="案例复现 009" style="width:100%;aspect-ratio:1 / 1;object-fit:cover;border-radius:12px;">
+  <img src="/gallery/images/shot-010.png" alt="案例复现 010" style="width:100%;aspect-ratio:1 / 1;object-fit:cover;border-radius:12px;">
+  <img src="/gallery/images/shot-011.png" alt="案例复现 011" style="width:100%;aspect-ratio:1 / 1;object-fit:cover;border-radius:12px;">
+</div>
 
 <h2 class="relative group">2. 源码机制：<code>TextEncodeQwenImageEditPlus</code> 的双分支
     <div id="2-源码机制textencodeqwenimageeditplus-的双分支" class="anchor"></div>
@@ -1410,1062 +1438,6 @@
 
 
   
-    
-      
-    
-  
-
-  
-  
-    
-    
-      
-    
-      
-    
-      
-    
-  
-
-  
-  
-    
-    
-      
-    
-  
-
-  
-  
-    
-      
-      
-    
-  
-
-
-
-<article
-  class="relative min-h-full min-w-full overflow-hidden rounded border border-2 border-neutral-200 shadow-2xl dark:border-neutral-700">
-  
-    <div class="flex-none relative overflow-hidden thumbnail_card_related">
-      <img
-        src="/img/featured.svg"
-        alt="截图 170222"
-        loading="lazy"
-        decoding="async"
-        fetchpriority="low"
-        class="not-prose absolute inset-0 w-full h-full object-cover">
-    </div>
-  
-  
-  <div class="px-6 py-4">
-    <header>
-      <a
-        
-          href="/gallery/images/shot-011/"
-        
-        class="not-prose before:absolute before:inset-0 decoration-primary-500 dark:text-neutral text-xl font-bold text-neutral-800 hover:underline hover:underline-offset-2">
-        <h2>
-          截图 170222
-          
-        </h2>
-      </a>
-    </header>
-    <div class="text-sm text-neutral-500 dark:text-neutral-400">
-      
-
-
-
-
-
-
-
-  
-
-  
-  
-  
-    
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-
-  <div class="flex flex-row flex-wrap items-center">
-    
-    
-
-    
-    
-  </div>
-
-  
-    <div class="flex flex-row flex-wrap items-center">
-      
-        
-          
-        
-      
-        
-      
-        
-      
-        
-      
-    </div>
-  
-
-  
-  
-    <div class="flex flex-row flex-wrap items-center">
-      
-        
-      
-        
-          
-        
-      
-        
-      
-        
-          
-            
-              <a class="relative mt-[0.5rem] me-2" href="/tags/screenshot/">
-                <span class="flex cursor-pointer">
-  <span
-    class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
-    Screenshot
-  </span>
-</span>
-
-              </a>
-            
-          
-        
-      
-    </div>
-  
-
-  
-  
-
-
-
-    </div>
-    
-  </div>
-  <div class="px-6 pt-4 pb-2"></div>
-</article>
-
-      
-        
-
-
-
-
-
-
-
-  
-    
-      
-    
-  
-
-  
-  
-    
-    
-      
-    
-      
-    
-      
-    
-  
-
-  
-  
-    
-    
-      
-    
-  
-
-  
-  
-    
-      
-      
-    
-  
-
-
-
-<article
-  class="relative min-h-full min-w-full overflow-hidden rounded border border-2 border-neutral-200 shadow-2xl dark:border-neutral-700">
-  
-    <div class="flex-none relative overflow-hidden thumbnail_card_related">
-      <img
-        src="/img/featured.svg"
-        alt="截图 170206"
-        loading="lazy"
-        decoding="async"
-        fetchpriority="low"
-        class="not-prose absolute inset-0 w-full h-full object-cover">
-    </div>
-  
-  
-  <div class="px-6 py-4">
-    <header>
-      <a
-        
-          href="/gallery/images/shot-010/"
-        
-        class="not-prose before:absolute before:inset-0 decoration-primary-500 dark:text-neutral text-xl font-bold text-neutral-800 hover:underline hover:underline-offset-2">
-        <h2>
-          截图 170206
-          
-        </h2>
-      </a>
-    </header>
-    <div class="text-sm text-neutral-500 dark:text-neutral-400">
-      
-
-
-
-
-
-
-
-  
-
-  
-  
-  
-    
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-
-  <div class="flex flex-row flex-wrap items-center">
-    
-    
-
-    
-    
-  </div>
-
-  
-    <div class="flex flex-row flex-wrap items-center">
-      
-        
-          
-        
-      
-        
-      
-        
-      
-        
-      
-    </div>
-  
-
-  
-  
-    <div class="flex flex-row flex-wrap items-center">
-      
-        
-      
-        
-          
-        
-      
-        
-      
-        
-          
-            
-              <a class="relative mt-[0.5rem] me-2" href="/tags/screenshot/">
-                <span class="flex cursor-pointer">
-  <span
-    class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
-    Screenshot
-  </span>
-</span>
-
-              </a>
-            
-          
-        
-      
-    </div>
-  
-
-  
-  
-
-
-
-    </div>
-    
-  </div>
-  <div class="px-6 pt-4 pb-2"></div>
-</article>
-
-      
-        
-
-
-
-
-
-
-
-  
-    
-      
-    
-  
-
-  
-  
-    
-    
-      
-    
-      
-    
-      
-    
-  
-
-  
-  
-    
-    
-      
-    
-  
-
-  
-  
-    
-      
-      
-    
-  
-
-
-
-<article
-  class="relative min-h-full min-w-full overflow-hidden rounded border border-2 border-neutral-200 shadow-2xl dark:border-neutral-700">
-  
-    <div class="flex-none relative overflow-hidden thumbnail_card_related">
-      <img
-        src="/img/featured.svg"
-        alt="截图 175145"
-        loading="lazy"
-        decoding="async"
-        fetchpriority="low"
-        class="not-prose absolute inset-0 w-full h-full object-cover">
-    </div>
-  
-  
-  <div class="px-6 py-4">
-    <header>
-      <a
-        
-          href="/gallery/images/shot-009/"
-        
-        class="not-prose before:absolute before:inset-0 decoration-primary-500 dark:text-neutral text-xl font-bold text-neutral-800 hover:underline hover:underline-offset-2">
-        <h2>
-          截图 175145
-          
-        </h2>
-      </a>
-    </header>
-    <div class="text-sm text-neutral-500 dark:text-neutral-400">
-      
-
-
-
-
-
-
-
-  
-
-  
-  
-  
-    
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-
-  <div class="flex flex-row flex-wrap items-center">
-    
-    
-
-    
-    
-  </div>
-
-  
-    <div class="flex flex-row flex-wrap items-center">
-      
-        
-          
-        
-      
-        
-      
-        
-      
-        
-      
-    </div>
-  
-
-  
-  
-    <div class="flex flex-row flex-wrap items-center">
-      
-        
-      
-        
-          
-        
-      
-        
-      
-        
-          
-            
-              <a class="relative mt-[0.5rem] me-2" href="/tags/screenshot/">
-                <span class="flex cursor-pointer">
-  <span
-    class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
-    Screenshot
-  </span>
-</span>
-
-              </a>
-            
-          
-        
-      
-    </div>
-  
-
-  
-  
-
-
-
-    </div>
-    
-  </div>
-  <div class="px-6 pt-4 pb-2"></div>
-</article>
-
-      
-        
-
-
-
-
-
-
-
-  
-    
-      
-    
-  
-
-  
-  
-    
-    
-      
-    
-      
-    
-      
-    
-  
-
-  
-  
-    
-    
-      
-    
-  
-
-  
-  
-    
-      
-      
-    
-  
-
-
-
-<article
-  class="relative min-h-full min-w-full overflow-hidden rounded border border-2 border-neutral-200 shadow-2xl dark:border-neutral-700">
-  
-    <div class="flex-none relative overflow-hidden thumbnail_card_related">
-      <img
-        src="/img/featured.svg"
-        alt="截图 175132"
-        loading="lazy"
-        decoding="async"
-        fetchpriority="low"
-        class="not-prose absolute inset-0 w-full h-full object-cover">
-    </div>
-  
-  
-  <div class="px-6 py-4">
-    <header>
-      <a
-        
-          href="/gallery/images/shot-008/"
-        
-        class="not-prose before:absolute before:inset-0 decoration-primary-500 dark:text-neutral text-xl font-bold text-neutral-800 hover:underline hover:underline-offset-2">
-        <h2>
-          截图 175132
-          
-        </h2>
-      </a>
-    </header>
-    <div class="text-sm text-neutral-500 dark:text-neutral-400">
-      
-
-
-
-
-
-
-
-  
-
-  
-  
-  
-    
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-
-  <div class="flex flex-row flex-wrap items-center">
-    
-    
-
-    
-    
-  </div>
-
-  
-    <div class="flex flex-row flex-wrap items-center">
-      
-        
-          
-        
-      
-        
-      
-        
-      
-        
-      
-    </div>
-  
-
-  
-  
-    <div class="flex flex-row flex-wrap items-center">
-      
-        
-      
-        
-          
-        
-      
-        
-      
-        
-          
-            
-              <a class="relative mt-[0.5rem] me-2" href="/tags/screenshot/">
-                <span class="flex cursor-pointer">
-  <span
-    class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
-    Screenshot
-  </span>
-</span>
-
-              </a>
-            
-          
-        
-      
-    </div>
-  
-
-  
-  
-
-
-
-    </div>
-    
-  </div>
-  <div class="px-6 pt-4 pb-2"></div>
-</article>
-
-      
-        
-
-
-
-
-
-
-
-  
-    
-      
-    
-  
-
-  
-  
-    
-    
-      
-    
-      
-    
-      
-    
-  
-
-  
-  
-    
-    
-      
-    
-  
-
-  
-  
-    
-      
-      
-    
-  
-
-
-
-<article
-  class="relative min-h-full min-w-full overflow-hidden rounded border border-2 border-neutral-200 shadow-2xl dark:border-neutral-700">
-  
-    <div class="flex-none relative overflow-hidden thumbnail_card_related">
-      <img
-        src="/img/featured.svg"
-        alt="截图 161108"
-        loading="lazy"
-        decoding="async"
-        fetchpriority="low"
-        class="not-prose absolute inset-0 w-full h-full object-cover">
-    </div>
-  
-  
-  <div class="px-6 py-4">
-    <header>
-      <a
-        
-          href="/gallery/images/shot-007/"
-        
-        class="not-prose before:absolute before:inset-0 decoration-primary-500 dark:text-neutral text-xl font-bold text-neutral-800 hover:underline hover:underline-offset-2">
-        <h2>
-          截图 161108
-          
-        </h2>
-      </a>
-    </header>
-    <div class="text-sm text-neutral-500 dark:text-neutral-400">
-      
-
-
-
-
-
-
-
-  
-
-  
-  
-  
-    
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-
-  <div class="flex flex-row flex-wrap items-center">
-    
-    
-
-    
-    
-  </div>
-
-  
-    <div class="flex flex-row flex-wrap items-center">
-      
-        
-          
-        
-      
-        
-      
-        
-      
-        
-      
-    </div>
-  
-
-  
-  
-    <div class="flex flex-row flex-wrap items-center">
-      
-        
-      
-        
-          
-        
-      
-        
-      
-        
-          
-            
-              <a class="relative mt-[0.5rem] me-2" href="/tags/screenshot/">
-                <span class="flex cursor-pointer">
-  <span
-    class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
-    Screenshot
-  </span>
-</span>
-
-              </a>
-            
-          
-        
-      
-    </div>
-  
-
-  
-  
-
-
-
-    </div>
-    
-  </div>
-  <div class="px-6 pt-4 pb-2"></div>
-</article>
-
-      
-        
-
-
-
-
-
-
-
-  
-    
-      
-    
-  
-
-  
-  
-    
-    
-      
-    
-      
-    
-      
-    
-  
-
-  
-  
-    
-    
-      
-    
-  
-
-  
-  
-    
-      
-      
-    
-  
-
-
-
-<article
-  class="relative min-h-full min-w-full overflow-hidden rounded border border-2 border-neutral-200 shadow-2xl dark:border-neutral-700">
-  
-    <div class="flex-none relative overflow-hidden thumbnail_card_related">
-      <img
-        src="/img/featured.svg"
-        alt="截图 161013"
-        loading="lazy"
-        decoding="async"
-        fetchpriority="low"
-        class="not-prose absolute inset-0 w-full h-full object-cover">
-    </div>
-  
-  
-  <div class="px-6 py-4">
-    <header>
-      <a
-        
-          href="/gallery/images/shot-006/"
-        
-        class="not-prose before:absolute before:inset-0 decoration-primary-500 dark:text-neutral text-xl font-bold text-neutral-800 hover:underline hover:underline-offset-2">
-        <h2>
-          截图 161013
-          
-        </h2>
-      </a>
-    </header>
-    <div class="text-sm text-neutral-500 dark:text-neutral-400">
-      
-
-
-
-
-
-
-
-  
-
-  
-  
-  
-    
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-
-  <div class="flex flex-row flex-wrap items-center">
-    
-    
-
-    
-    
-  </div>
-
-  
-    <div class="flex flex-row flex-wrap items-center">
-      
-        
-          
-        
-      
-        
-      
-        
-      
-        
-      
-    </div>
-  
-
-  
-  
-    <div class="flex flex-row flex-wrap items-center">
-      
-        
-      
-        
-          
-        
-      
-        
-      
-        
-          
-            
-              <a class="relative mt-[0.5rem] me-2" href="/tags/screenshot/">
-                <span class="flex cursor-pointer">
-  <span
-    class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
-    Screenshot
-  </span>
-</span>
-
-              </a>
-            
-          
-        
-      
-    </div>
-  
-
-  
-  
-
-
-
-    </div>
-    
-  </div>
-  <div class="px-6 pt-4 pb-2"></div>
-</article>
-
-      
-        
-
-
-
-
-
-
-
-  
 
   
   
@@ -2545,6 +1517,8 @@
   
 
   
+    
+  
 
   
     
@@ -2568,173 +1542,7 @@
   <div class="flex flex-row flex-wrap items-center">
     
     
-      <time datetime="2026-02-23T00:00:00&#43;00:00">02-23-2026</time><span class="px-2 text-primary-500">&middot;</span><span>3387 字</span><span class="px-2 text-primary-500">&middot;</span><span title="预计阅读">7 分钟</span>
-    
-
-    
-    
-  </div>
-
-  
-    <div class="flex flex-row flex-wrap items-center">
-      
-        
-          
-        
-      
-        
-      
-        
-      
-        
-      
-    </div>
-  
-
-  
-  
-    <div class="flex flex-row flex-wrap items-center">
-      
-        
-      
-        
-          
-        
-      
-        
-      
-        
-          
-        
-      
-    </div>
-  
-
-  
-  
-
-
-
-    </div>
-    
-      <div class="prose dark:prose-invert py-1">这篇文章用于简单归纳 Qwen-Image-Edit 2511 能完成的任务类型，方便快速查阅。</div>
-    
-  </div>
-  <div class="px-6 pt-4 pb-2"></div>
-</article>
-
-      
-        
-
-
-
-
-
-
-
-  
-    
-      
-    
-  
-
-  
-  
-    
-    
-      
-    
-      
-    
-      
-    
-  
-
-  
-  
-    
-    
-      
-    
-  
-
-  
-  
-    
-      
-      
-    
-  
-
-
-
-<article
-  class="relative min-h-full min-w-full overflow-hidden rounded border border-2 border-neutral-200 shadow-2xl dark:border-neutral-700">
-  
-    <div class="flex-none relative overflow-hidden thumbnail_card_related">
-      <img
-        src="/img/featured.svg"
-        alt="ComfyUI 00004"
-        loading="lazy"
-        decoding="async"
-        fetchpriority="low"
-        class="not-prose absolute inset-0 w-full h-full object-cover">
-    </div>
-  
-  
-  <div class="px-6 py-4">
-    <header>
-      <a
-        
-          href="/gallery/images/shot-005/"
-        
-        class="not-prose before:absolute before:inset-0 decoration-primary-500 dark:text-neutral text-xl font-bold text-neutral-800 hover:underline hover:underline-offset-2">
-        <h2>
-          ComfyUI 00004
-          
-        </h2>
-      </a>
-    </header>
-    <div class="text-sm text-neutral-500 dark:text-neutral-400">
-      
-
-
-
-
-
-
-
-  
-
-  
-  
-  
-    
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-
-  <div class="flex flex-row flex-wrap items-center">
-    
+      <time datetime="2026-01-02T00:00:00&#43;00:00">01-02-2026</time><span class="px-2 text-primary-500">&middot;</span><time datetime="2026-02-23T00:00:00&#43;00:00">更新于: 02-23-2026</time><span class="px-2 text-primary-500">&middot;</span><span>3387 字</span><span class="px-2 text-primary-500">&middot;</span><span title="预计阅读">7 分钟</span>
     
 
     
@@ -2772,21 +1580,31 @@
         
           
             
-              <a class="relative mt-[0.5rem] me-2" href="/tags/ai/">
+              <a class="relative mt-[0.5rem] me-2" href="/tags/comfyui/">
                 <span class="flex cursor-pointer">
   <span
     class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
-    Ai
+    ComfyUI
   </span>
 </span>
 
               </a>
             
-              <a class="relative mt-[0.5rem] me-2" href="/tags/generation/">
+              <a class="relative mt-[0.5rem] me-2" href="/tags/qwen-image-edit/">
                 <span class="flex cursor-pointer">
   <span
     class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
-    Generation
+    Qwen-Image-Edit
+  </span>
+</span>
+
+              </a>
+            
+              <a class="relative mt-[0.5rem] me-2" href="/tags/%E5%BC%80%E6%BA%90%E6%A8%A1%E5%9E%8B/">
+                <span class="flex cursor-pointer">
+  <span
+    class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
+    开源模型
   </span>
 </span>
 
@@ -2805,191 +1623,7 @@
 
     </div>
     
-  </div>
-  <div class="px-6 pt-4 pb-2"></div>
-</article>
-
-      
-        
-
-
-
-
-
-
-
-  
-    
-      
-    
-  
-
-  
-  
-    
-    
-      
-    
-      
-    
-      
-    
-  
-
-  
-  
-    
-    
-      
-    
-  
-
-  
-  
-    
-      
-      
-    
-  
-
-
-
-<article
-  class="relative min-h-full min-w-full overflow-hidden rounded border border-2 border-neutral-200 shadow-2xl dark:border-neutral-700">
-  
-    <div class="flex-none relative overflow-hidden thumbnail_card_related">
-      <img
-        src="/img/featured.svg"
-        alt="ComfyUI 00003"
-        loading="lazy"
-        decoding="async"
-        fetchpriority="low"
-        class="not-prose absolute inset-0 w-full h-full object-cover">
-    </div>
-  
-  
-  <div class="px-6 py-4">
-    <header>
-      <a
-        
-          href="/gallery/images/shot-004/"
-        
-        class="not-prose before:absolute before:inset-0 decoration-primary-500 dark:text-neutral text-xl font-bold text-neutral-800 hover:underline hover:underline-offset-2">
-        <h2>
-          ComfyUI 00003
-          
-        </h2>
-      </a>
-    </header>
-    <div class="text-sm text-neutral-500 dark:text-neutral-400">
-      
-
-
-
-
-
-
-
-  
-
-  
-  
-  
-    
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-
-  <div class="flex flex-row flex-wrap items-center">
-    
-    
-
-    
-    
-  </div>
-
-  
-    <div class="flex flex-row flex-wrap items-center">
-      
-        
-          
-        
-      
-        
-      
-        
-      
-        
-      
-    </div>
-  
-
-  
-  
-    <div class="flex flex-row flex-wrap items-center">
-      
-        
-      
-        
-          
-        
-      
-        
-      
-        
-          
-            
-              <a class="relative mt-[0.5rem] me-2" href="/tags/ai/">
-                <span class="flex cursor-pointer">
-  <span
-    class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
-    Ai
-  </span>
-</span>
-
-              </a>
-            
-              <a class="relative mt-[0.5rem] me-2" href="/tags/generation/">
-                <span class="flex cursor-pointer">
-  <span
-    class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
-    Generation
-  </span>
-</span>
-
-              </a>
-            
-          
-        
-      
-    </div>
-  
-
-  
-  
-
-
-
-    </div>
+      <div class="prose dark:prose-invert py-1">本文用于简单归纳 Qwen-Image-Edit 2511 能完成的任务类型，方便快速查阅。</div>
     
   </div>
   <div class="px-6 pt-4 pb-2"></div>
@@ -3041,7 +1675,7 @@
             </a>
             
               <span class="ms-6 mt-1 text-xs text-neutral-500 dark:text-neutral-400">
-                <time datetime="2026-02-23T00:00:00&#43;00:00">02-23-2026</time>
+                <time datetime="2026-01-02T00:00:00&#43;00:00">01-02-2026</time>
               </span>
             
           
