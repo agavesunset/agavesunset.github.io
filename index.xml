@@ -50,6 +50,16 @@
     </item>
     
     <item>
+      <title>NanobananaPro 的 36P 多视觉创意任务：低成本探索与二轮放大</title>
+      <link>https://agavesunset.github.io/docs/nanobananapro_36p/</link>
+      <pubDate>Sun, 07 Dec 2025 00:00:00 +0000</pubDate>
+      
+      <guid>https://agavesunset.github.io/docs/nanobananapro_36p/</guid>
+      <description>记录 NanobananaPro 的 6x6 多视觉创意方法：先一次生成 36 个方向，再把选中的画面重建为高质量终稿。</description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://agavesunset.github.io/docs/nanobananapro_36p/featured.webp" />
+    </item>
+    
+    <item>
       <title>本地 &#43; RunningHub API 的混合架构：在显存受限下完成高质量重绘</title>
       <link>https://agavesunset.github.io/docs/rh-api/</link>
       <pubDate>Sat, 06 Sep 2025 00:00:00 +0000</pubDate>
@@ -57,16 +67,6 @@
       <guid>https://agavesunset.github.io/docs/rh-api/</guid>
       <description>记录一套本地与云端协同的混合工作流：本地负责批处理与数据管理，云端负责重绘、修复与放大，以应对显存与节点能力限制。</description>
       <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://agavesunset.github.io/docs/rh-api/featured.webp" />
-    </item>
-    
-    <item>
-      <title>z-image-turbo的最佳画质研究</title>
-      <link>https://agavesunset.github.io/docs/nanobanana_1/</link>
-      <pubDate>Sun, 22 Dec 2024 00:00:00 +0000</pubDate>
-      
-      <guid>https://agavesunset.github.io/docs/nanobanana_1/</guid>
-      <description>记录 z-image-turbo 的采样多样性、可视化方法，以及在 qwen 系列上的实验观察。</description>
-      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://agavesunset.github.io/docs/nanobanana_1/featured.jpg" />
     </item>
     
   </channel>

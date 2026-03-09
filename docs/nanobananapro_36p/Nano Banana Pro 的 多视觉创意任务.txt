@@ -1,0 +1,67 @@
+这篇文章记录 Nano Banana Pro 的一个具体应用：通过 6×6 网格一次生成 36 个视觉方向，用于前期创意探索与方案筛选。对于这类任务，重复抽卡的费用通常偏高。一次生成多张素材，再从中挑选，成本更低。原帖的原始用法也很直接：生成一张 6×6 网格图，得到 36 张图，再从中挑出喜欢的一张进行裁剪或截图。
+
+用一张图片生成 36 张图片的技巧，还能省钱
+
+这个应用适合 image ideas 和 concept ads 这类前期任务。第一轮负责铺开方向，第二轮负责把选中的方案做成可用的大图。裁出来的小图尺寸通常不够，原帖给出的处理方式是：把裁图和原始参考图一起再次输入模型，重新生成最终图，这样不会丢失细节。
+
+用一张图片生成 36 张图片的技巧，还能省钱
+
+关键在于第一轮输出足够分散。36 张只是承载形式。真正决定效果的是 prompt 对差异性的约束。原帖里最重要的两句是：Each of the 36 cells must showcase a completely unique creative concept，以及 No two cells should share the same visual approach。这两句决定了 36 个格子对应 36 个方向，而不是 36 个小变体。
+
+用一张图片生成 36 张图片的技巧，还能省钱
+
+第一组 prompt 偏商业产品摄影，适合产品图、概念广告、品牌视觉方向探索。
+Generate a 6x6 grid of professional product photography from the product uploaded. Reference the original image's mood, quality, and aesthetic. Each of the 36 cells must showcase a completely unique creative concept, different product category, distinct color palette, varied lighting style (dramatic, soft, neon, natural, rim-lit, etc.), unique background treatment, and fresh art direction. No two cells should share the same visual approach. Include unexpected combinations: surreal compositions, bold minimalism, textural contrasts, floating elements, reflective surfaces, organic materials, geometric styling, vintage aesthetics, futuristic setups, and artistic props. Maintain high-end commercial photography quality throughout while maximizing creative diversity across every single frame.
+
+中文整理版：
+根据上传的产品图片，生成一个 6x6 的专业产品摄影网格。参考原图的氛围、质量和美学风格。36 个网格中的每个画面都必须展现一个完全独特的创意概念，涵盖不同的产品类别、不同的配色方案、不同的光线风格（例如：戏剧化、柔和、霓虹、自然、轮廓光等）、独特的背景处理以及新颖的艺术指导。每个网格的视觉风格都不得相同。尝试运用意想不到的组合：超现实构图、大胆的极简主义、纹理对比、漂浮元素、反光表面、有机材料、几何造型、复古美学、未来主义布景以及艺术道具。在保持高端商业摄影品质的同时，尽可能展现每个画面的创意多样性。
+
+
+第二组 prompt 偏 editorial 和 fine art，更适合把视觉语言拉得更开。
+Generate a 6x6 grid of editorial product photography. Each of the 36 frames must be a unique artistic vision—mixing fine art with commercial photography. Explore surrealism, abstract compositions, dramatic chiaroscuro, color blocking, liquid splashes, smoke effects, mirror reflections, levitation, deconstruction, nature fusion, and sculptural arrangements. Every cell should feel like a different photographer's signature style. High-end quality, maximum creative range.
+
+中文整理版：
+生成一个 6x6 的产品摄影网格。36 幅作品必须展现独特的艺术视角——融合艺术与商业摄影。探索超现实主义、抽象构图、明暗对比、色块拼接、液体泼溅、烟雾效果、镜面反射、悬浮、解构、自然融合和雕塑般的构图。每一幅作品都应体现不同摄影师的标志性风格。追求高端品质，充分发挥创意空间。
+
+
+第二轮可以分成两个分支。第一种分支用于“保留方向，再做终稿”。第二种分支用于“忠实放大某一个格子本身”。
+
+第一种是创意方向分支。适合这种需求：我喜欢这个格子的方向和氛围，但允许模型重新组织细节，只要保持同一艺术指导即可。
+Use the cropped image as the chosen creative direction, and use the original reference image to preserve the subject details, structure, and identity. Recreate this concept as a full, high-quality final image. Keep the same mood, lighting direction, composition tendency, and art direction as the cropped image, while restoring detail, clarity, texture, and overall image quality.
+
+中文整理版：
+以裁剪出的图片作为创意方向参考，以原始参考图作为主体细节、结构和身份参考，重新生成一张完整的高质量最终图。保持裁剪图中的氛围、打光方向、构图倾向和艺术指导，同时恢复细节、清晰度、材质表现和整体画质。
+
+第二种是精准放大分支。适合这种需求：我不要“类似”，我就要某一个格子本身的大图版本，比如第一行第六个。
+Recreate the cropped image as faithfully as possible in high resolution. Preserve the same composition, framing, camera angle, subject pose, lighting, color palette, background elements, materials, reflections, shadows, and overall mood. Use the original reference image only to restore subject detail and clarity. Do not introduce a new concept, new props, new background, or a different visual style. This should be a high-resolution faithful enlargement of the selected image, not a reinterpretation.
+
+中文整理版：
+将裁剪出的图片尽可能忠实地重建为高分辨率版本。保留相同的构图、取景、镜头角度、主体姿态、光线、配色、背景元素、材质、反射、阴影和整体氛围。原始参考图仅用于恢复主体细节与清晰度，不用于改变方案。不要引入新的概念、新的道具、新的背景或不同的视觉风格。这是一张对所选图片的高分辨率忠实放大版本，不是重新演绎。
+
+如果需要更强约束，还可以再补两句：
+Match the selected image exactly as closely as possible. Keep the same crop and visual arrangement. Only increase resolution and restore detail.
+中文版本：
+尽可能精确匹配所选图片。保持相同的裁切范围和视觉布局。只提升分辨率并恢复细节。
+
+实际使用时，流程很简单。先跑 6×6 网格。再从 36 个格子里挑出一个。然后把这个格子单独裁出来，尽量不要带网格边框。或者直接指定第几行第几个，最后把裁图和原始参考图一起送进第二轮。目标是“保留方向再重做”，就用创意方向分支；目标是“我就要这个格子的大图版本”，就用精准放大分支。前面的判断依据仍然来自原帖本身：先裁图，再与原参考图一起生成最终图。
+这类 6×6 网格应用最有价值的部分有三个。第一，降低重复抽卡成本。第二，强行拉开第一轮的方向差异。第三，第二轮把“方向参考”和“主体细节”重新合并，生成可用终稿。原帖给出的信息基本都围绕这三点展开。
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

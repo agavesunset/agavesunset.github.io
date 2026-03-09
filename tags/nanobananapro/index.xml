@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>NanobananaPro on SPACE_MING</title>
+    <link>https://agavesunset.github.io/tags/nanobananapro/</link>
+    <description>Recent content in NanobananaPro on SPACE_MING</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <copyright>© 2026 龙舌兰日落</copyright>
+    <lastBuildDate>Sun, 07 Dec 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://agavesunset.github.io/tags/nanobananapro/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>NanobananaPro 的 36P 多视觉创意任务：低成本探索与二轮放大</title>
+      <link>https://agavesunset.github.io/docs/nanobananapro_36p/</link>
+      <pubDate>Sun, 07 Dec 2025 00:00:00 +0000</pubDate>
+      
+      <guid>https://agavesunset.github.io/docs/nanobananapro_36p/</guid>
+      <description>记录 NanobananaPro 的 6x6 多视觉创意方法：先一次生成 36 个方向，再把选中的画面重建为高质量终稿。</description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://agavesunset.github.io/docs/nanobananapro_36p/featured.webp" />
+    </item>
+    
+  </channel>
+</rss>
