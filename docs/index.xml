@@ -7,7 +7,17 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
     <copyright>© 2026 龙舌兰日落</copyright>
-    <lastBuildDate>Thu, 15 Jan 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://agavesunset.github.io/docs/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 11 Mar 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://agavesunset.github.io/docs/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>OpenClaw &#43; Feishu &#43; ComfyUI / RunningHub 简明总结</title>
+      <link>https://agavesunset.github.io/docs/openclaw-feishu-comfyui/</link>
+      <pubDate>Wed, 11 Mar 2026 00:00:00 +0000</pubDate>
+      
+      <guid>https://agavesunset.github.io/docs/openclaw-feishu-comfyui/</guid>
+      <description>把飞书里的模糊自然语言，使用部署于docker环境中的openclaw变成可执行的图像任务；任务在本地 ComfyUI 或 RunningHub 执行；结果图回到飞书，同时落盘到本地数据库。</description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://agavesunset.github.io/docs/openclaw-feishu-comfyui/featured.webp" />
+    </item>
     
     <item>
       <title>Qwen-Image-Edit-2511 在 ComfyUI 的偏移问题：根因与结构性修复</title>
@@ -27,26 +37,6 @@
       <guid>https://agavesunset.github.io/docs/qwen_image_edit_2511/</guid>
       <description>本文用于简单归纳 &lt;code&gt;Qwen-Image-Edit 2511&lt;/code&gt; 能完成的任务类型，方便快速查阅。</description>
       <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://agavesunset.github.io/docs/qwen_image_edit_2511/featured.jpg" />
-    </item>
-    
-    <item>
-      <title>z-image-turbo的种子多样性研究，可泛化至qwen系列等低随机性模型</title>
-      <link>https://agavesunset.github.io/docs/nanobanana_2/</link>
-      <pubDate>Mon, 22 Dec 2025 00:00:00 +0000</pubDate>
-      
-      <guid>https://agavesunset.github.io/docs/nanobanana_2/</guid>
-      <description></description>
-      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://agavesunset.github.io/docs/nanobanana_2/featured.png" />
-    </item>
-    
-    <item>
-      <title>使用Nanobanana Pro快速创建一系列产品图</title>
-      <link>https://agavesunset.github.io/docs/nanobanana_3/</link>
-      <pubDate>Mon, 22 Dec 2025 00:00:00 +0000</pubDate>
-      
-      <guid>https://agavesunset.github.io/docs/nanobanana_3/</guid>
-      <description></description>
-      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://agavesunset.github.io/docs/nanobanana_3/featured2.png" />
     </item>
     
     <item>

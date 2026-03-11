@@ -7,7 +7,17 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
     <copyright>© 2026 龙舌兰日落</copyright>
-    <lastBuildDate>Sat, 06 Sep 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://agavesunset.github.io/tags/runninghub/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 11 Mar 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://agavesunset.github.io/tags/runninghub/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>OpenClaw &#43; Feishu &#43; ComfyUI / RunningHub 简明总结</title>
+      <link>https://agavesunset.github.io/docs/openclaw-feishu-comfyui/</link>
+      <pubDate>Wed, 11 Mar 2026 00:00:00 +0000</pubDate>
+      
+      <guid>https://agavesunset.github.io/docs/openclaw-feishu-comfyui/</guid>
+      <description>把飞书里的模糊自然语言，使用部署于docker环境中的openclaw变成可执行的图像任务；任务在本地 ComfyUI 或 RunningHub 执行；结果图回到飞书，同时落盘到本地数据库。</description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://agavesunset.github.io/docs/openclaw-feishu-comfyui/featured.webp" />
+    </item>
     
     <item>
       <title>本地 &#43; RunningHub API 的混合架构：在显存受限下完成高质量重绘</title>

@@ -4,13 +4,55 @@
 
   <url>
     <loc>https://agavesunset.github.io/tags/comfyui/</loc>
-    <lastmod>2026-03-05T00:00:00+00:00</lastmod>
+    <lastmod>2026-03-11T00:00:00+00:00</lastmod>
+    <changefreq>always</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://agavesunset.github.io/tags/docker/</loc>
+    <lastmod>2026-03-11T00:00:00+00:00</lastmod>
     <changefreq>always</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://agavesunset.github.io/docs/</loc>
-    <lastmod>2026-03-05T00:00:00+00:00</lastmod>
+    <lastmod>2026-03-11T00:00:00+00:00</lastmod>
+    <changefreq>always</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://agavesunset.github.io/tags/feishu/</loc>
+    <lastmod>2026-03-11T00:00:00+00:00</lastmod>
+    <changefreq>always</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://agavesunset.github.io/tags/openclaw/</loc>
+    <lastmod>2026-03-11T00:00:00+00:00</lastmod>
+    <changefreq>always</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://agavesunset.github.io/docs/openclaw-feishu-comfyui/</loc>
+    <lastmod>2026-03-11T00:00:00+00:00</lastmod>
+    <changefreq>always</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://agavesunset.github.io/tags/runninghub/</loc>
+    <lastmod>2026-03-11T00:00:00+00:00</lastmod>
+    <changefreq>always</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://agavesunset.github.io/tags/</loc>
+    <lastmod>2026-03-11T00:00:00+00:00</lastmod>
+    <changefreq>always</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://agavesunset.github.io/</loc>
+    <lastmod>2026-03-11T00:00:00+00:00</lastmod>
     <changefreq>always</changefreq>
     <priority>0.5</priority>
   </url>
@@ -27,19 +69,7 @@
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://agavesunset.github.io/tags/</loc>
-    <lastmod>2026-03-05T00:00:00+00:00</lastmod>
-    <changefreq>always</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
     <loc>https://agavesunset.github.io/tags/%E5%BC%80%E6%BA%90%E6%A8%A1%E5%9E%8B/</loc>
-    <lastmod>2026-03-05T00:00:00+00:00</lastmod>
-    <changefreq>always</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://agavesunset.github.io/</loc>
     <lastmod>2026-03-05T00:00:00+00:00</lastmod>
     <changefreq>always</changefreq>
     <priority>0.5</priority>
@@ -47,18 +77,6 @@
   <url>
     <loc>https://agavesunset.github.io/docs/qwen_image_edit_2511/</loc>
     <lastmod>2026-02-23T00:00:00+00:00</lastmod>
-    <changefreq>always</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://agavesunset.github.io/docs/nanobanana_2/</loc>
-    <lastmod>2025-12-25T00:00:00+00:00</lastmod>
-    <changefreq>always</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://agavesunset.github.io/docs/nanobanana_3/</loc>
-    <lastmod>2025-12-25T00:00:00+00:00</lastmod>
     <changefreq>always</changefreq>
     <priority>0.5</priority>
   </url>
@@ -76,12 +94,6 @@
   </url>
   <url>
     <loc>https://agavesunset.github.io/tags/flux-kontext/</loc>
-    <lastmod>2025-10-06T00:00:00+00:00</lastmod>
-    <changefreq>always</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://agavesunset.github.io/tags/runninghub/</loc>
     <lastmod>2025-10-06T00:00:00+00:00</lastmod>
     <changefreq>always</changefreq>
     <priority>0.5</priority>
